@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRON Wallet</title>
+    <script src="https://unpkg.com/tronweb/dist/TronWeb.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>TRON Wallet</h1>
+    <div>
+        <button onclick="createWallet()">Create New Wallet</button>
+    </div>
+    <div>
+        <input type="text" id="privateKey" placeholder="Enter your private key">
+        <button onclick="login()">Login with Private Key</button>
+    </div>
+    <div>
+        <input type="text" id="recipient" placeholder="Recipient Address">
+        <input type="number" id="amount" placeholder="Amount (TRX)">
+        <button onclick="sendTransaction()">Send</button>
+    </div>
+    <div id="walletInfo"></div>
+    <div id="status"></div>
+</body>
+</html>
